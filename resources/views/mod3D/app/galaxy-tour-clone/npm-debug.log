@@ -1,0 +1,219 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'update',
+1 verbose cli   '-g',
+1 verbose cli   'cordova' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 silly mapToRegistry name cordova
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry uri https://registry.npmjs.org/cordova
+8 verbose request uri https://registry.npmjs.org/cordova
+9 verbose request no auth needed
+10 info attempt registry request try #1 at 9:37:16 AM
+11 verbose request id c19b8c1995fcb9a4
+12 verbose etag "2XBCU67E99Z3IS19B9W7P41SR"
+13 http request GET https://registry.npmjs.org/cordova
+14 http 200 https://registry.npmjs.org/cordova
+15 silly get cb [ 200,
+15 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+15 silly get     etag: '"E39FU8ZOJ5AVCD6DRFC7NFNE5"',
+15 silly get     'content-type': 'application/json',
+15 silly get     'content-encoding': 'gzip',
+15 silly get     'cache-control': 'max-age=300',
+15 silly get     'content-length': '28212',
+15 silly get     'accept-ranges': 'bytes',
+15 silly get     date: 'Fri, 22 Apr 2016 03:37:39 GMT',
+15 silly get     via: '1.1 varnish',
+15 silly get     age: '70',
+15 silly get     connection: 'keep-alive',
+15 silly get     'x-served-by': 'cache-sin6923-SIN',
+15 silly get     'x-cache': 'HIT',
+15 silly get     'x-cache-hits': '3',
+15 silly get     'x-timer': 'S1461296259.738922,VS0,VE0',
+15 silly get     vary: 'Accept-Encoding' } ]
+16 verbose get saving cordova to C:\Users\ashik\AppData\Roaming\npm-cache\registry.npmjs.org\cordova\.cache.json
+17 info outdated updating [ [ 'C:\\Users\\ashik\\AppData\\Roaming\\npm',
+17 info outdated     'cordova',
+17 info outdated     '5.0.0',
+17 info outdated     '6.1.1',
+17 info outdated     '6.1.1',
+17 info outdated     'latest' ] ]
+18 verbose install where, what [ 'C:\\Users\\ashik\\AppData\\Roaming\\npm',
+18 verbose install   [ 'cordova@6.1.1' ] ]
+19 verbose install initial load of C:\Users\ashik\AppData\Roaming\npm\package.json
+20 verbose readDependencies loading dependencies from C:\Users\ashik\AppData\Roaming\npm\package.json
+21 silly cache add args [ 'cordova@6.1.1', null ]
+22 verbose cache add spec cordova@6.1.1
+23 silly cache add parsed spec { raw: 'cordova@6.1.1',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'cordova',
+23 silly cache add   rawSpec: '6.1.1',
+23 silly cache add   spec: '6.1.1',
+23 silly cache add   type: 'version' }
+24 silly addNamed cordova@6.1.1
+25 verbose addNamed "6.1.1" is a plain semver version for cordova
+26 silly mapToRegistry name cordova
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry uri https://registry.npmjs.org/cordova
+30 verbose addNameVersion registry:https://registry.npmjs.org/cordova not in flight; fetching
+31 verbose get https://registry.npmjs.org/cordova not expired, no request
+32 silly mapToRegistry name cordova
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/cordova
+36 verbose addRemoteTarball https://registry.npmjs.org/cordova/-/cordova-6.1.1.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova/-/cordova-6.1.1.tgz',
+37 verbose addRemoteTarball   '156488fe453182941e6034516d4e0f2f85dd47bc' ]
+38 info retry fetch attempt 1 at 9:37:52 AM
+39 info attempt registry request try #1 at 9:37:52 AM
+40 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.1.1.tgz
+41 http fetch 200 https://registry.npmjs.org/cordova/-/cordova-6.1.1.tgz
+42 silly fetchAndShaCheck shasum 156488fe453182941e6034516d4e0f2f85dd47bc
+43 verbose addTmpTarball C:\Users\ashik\AppData\Local\Temp\npm-2908-f4ca619c\registry.npmjs.org\cordova\-\cordova-6.1.1.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for cordova@6.1.1
+45 silly cache afterAdd cordova@6.1.1
+46 verbose afterAdd C:\Users\ashik\AppData\Roaming\npm-cache\cordova\6.1.1\package\package.json not in flight; writing
+47 verbose afterAdd C:\Users\ashik\AppData\Roaming\npm-cache\cordova\6.1.1\package\package.json written
+48 silly install resolved [ { name: 'cordova',
+48 silly install resolved     version: '6.1.1',
+48 silly install resolved     preferGlobal: 'true',
+48 silly install resolved     description: 'Cordova command line interface tool',
+48 silly install resolved     main: 'cordova',
+48 silly install resolved     engines: { node: '>=0.9.9' },
+48 silly install resolved     engineStrict: true,
+48 silly install resolved     bin: { cordova: './bin/cordova' },
+48 silly install resolved     scripts:
+48 silly install resolved      { test: 'node node_modules/jasmine-node/bin/jasmine-node --captureExceptions --color spec',
+48 silly install resolved        cover: 'node node_modules/istanbul/lib/cli.js cover --root src --print detail node_modules/jasmine-node/bin/jasmine-node -- spec' },
+48 silly install resolved     repository:
+48 silly install resolved      { type: 'git',
+48 silly install resolved        url: 'https://git-wip-us.apache.org/repos/asf/cordova-cli.git' },
+48 silly install resolved     bugs:
+48 silly install resolved      { url: 'https://issues.apache.org/jira/browse/CB',
+48 silly install resolved        email: 'dev@cordova.apache.org' },
+48 silly install resolved     keywords: [ 'cordova', 'client', 'cli' ],
+48 silly install resolved     dependencies:
+48 silly install resolved      { ansi: '^0.3.0',
+48 silly install resolved        'cordova-lib': '6.1.1',
+48 silly install resolved        'cordova-common': '^1.1.0',
+48 silly install resolved        q: '1.0.1',
+48 silly install resolved        nopt: '3.0.1',
+48 silly install resolved        underscore: '1.7.0',
+48 silly install resolved        'update-notifier': '^0.5.0' },
+48 silly install resolved     devDependencies:
+48 silly install resolved      { istanbul: '^0.3.4',
+48 silly install resolved        grunt: '0.4.5',
+48 silly install resolved        'grunt-retire': '0.3.7',
+48 silly install resolved        'jasmine-node': '1.14.5' },
+48 silly install resolved     author: { name: 'Anis Kadri' },
+48 silly install resolved     contributors:
+48 silly install resolved      [ [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object] ],
+48 silly install resolved     license: 'Apache-2.0',
+48 silly install resolved     _id: 'cordova@6.1.1',
+48 silly install resolved     _shasum: '156488fe453182941e6034516d4e0f2f85dd47bc',
+48 silly install resolved     _resolved: 'https://registry.npmjs.org/cordova/-/cordova-6.1.1.tgz',
+48 silly install resolved     _from: 'cordova@6.1.1',
+48 silly install resolved     _npmVersion: '3.8.3',
+48 silly install resolved     _nodeVersion: '5.9.1',
+48 silly install resolved     _npmUser:
+48 silly install resolved      { name: 'kotikov.vladimir',
+48 silly install resolved        email: 'kotikov.vladimir@gmail.com' },
+48 silly install resolved     dist:
+48 silly install resolved      { shasum: '156488fe453182941e6034516d4e0f2f85dd47bc',
+48 silly install resolved        tarball: 'https://registry.npmjs.org/cordova/-/cordova-6.1.1.tgz' },
+48 silly install resolved     maintainers:
+48 silly install resolved      [ [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object] ],
+48 silly install resolved     _npmOperationalInternal:
+48 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+48 silly install resolved        tmp: 'tmp/cordova-6.1.1.tgz_1459545459074_0.8951308054383844' },
+48 silly install resolved     directories: {} } ]
+49 info install cordova@6.1.1 into C:\Users\ashik\AppData\Roaming\npm
+50 info installOne cordova@6.1.1
+51 verbose installOne of cordova to C:\Users\ashik\AppData\Roaming\npm not in flight; installing
+52 verbose lock using C:\Users\ashik\AppData\Roaming\npm-cache\_locks\cordova-7c407f5c171082eb.lock for C:\Users\ashik\AppData\Roaming\npm\node_modules\cordova
+53 silly install write writing cordova 6.1.1 to C:\Users\ashik\AppData\Roaming\npm\node_modules\cordova
+54 verbose unbuild node_modules\cordova
+55 info preuninstall cordova@5.0.0
+56 info uninstall cordova@5.0.0
+57 verbose unbuild rmStuff cordova@5.0.0 from C:\Users\ashik\AppData\Roaming\npm\node_modules
+58 silly gentlyRm C:\Users\ashik\AppData\Roaming\npm\cordova.cmd is being gently removed
+59 silly gentlyRm verifying C:\Users\ashik\AppData\Roaming\npm is an npm working directory
+60 silly gentlyRm containing path C:\Users\ashik\AppData\Roaming\npm is under npm's control, in C:\Users\ashik\AppData\Roaming\npm
+61 silly gentlyRm deletion target C:\Users\ashik\AppData\Roaming\npm\cordova.cmd is under C:\Users\ashik\AppData\Roaming\npm
+62 verbose gentlyRm vacuuming from C:\Users\ashik\AppData\Roaming\npm\cordova.cmd up to C:\Users\ashik\AppData\Roaming\npm
+63 silly vacuum-fs removing C:\Users\ashik\AppData\Roaming\npm\cordova.cmd
+64 silly vacuum-fs finished vacuuming up to C:\Users\ashik\AppData\Roaming\npm
+65 silly gentlyRm C:\Users\ashik\AppData\Roaming\npm\cordova is being gently removed
+66 silly gentlyRm verifying C:\Users\ashik\AppData\Roaming\npm is an npm working directory
+67 silly gentlyRm containing path C:\Users\ashik\AppData\Roaming\npm is under npm's control, in C:\Users\ashik\AppData\Roaming\npm
+68 silly gentlyRm deletion target C:\Users\ashik\AppData\Roaming\npm\cordova is under C:\Users\ashik\AppData\Roaming\npm
+69 verbose gentlyRm vacuuming from C:\Users\ashik\AppData\Roaming\npm\cordova up to C:\Users\ashik\AppData\Roaming\npm
+70 silly vacuum-fs removing C:\Users\ashik\AppData\Roaming\npm\cordova
+71 silly vacuum-fs finished vacuuming up to C:\Users\ashik\AppData\Roaming\npm
+72 info postuninstall cordova@5.0.0
+73 silly gentlyRm C:\Users\ashik\AppData\Roaming\npm\node_modules\cordova is being purged from base C:\Users\ashik\AppData\Roaming\npm
+74 verbose gentlyRm don't care about contents; nuking C:\Users\ashik\AppData\Roaming\npm\node_modules\cordova
+75 silly vacuum-fs purging C:\Users\ashik\AppData\Roaming\npm\node_modules\cordova
+76 verbose stack Error: read ECONNRESET
+76 verbose stack     at exports._errnoException (util.js:746:11)
+76 verbose stack     at TCP.onread (net.js:559:26)
+77 verbose cwd C:\Users\ashik\Desktop\Nasa\mod3D\app\galaxy-tour-clone
+78 error Windows_NT 6.2.9200
+79 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "update" "-g" "cordova"
+80 error node v0.12.7
+81 error npm  v2.11.3
+82 error code ECONNRESET
+83 error errno ECONNRESET
+84 error syscall read
+85 error network read ECONNRESET
+85 error network This is most likely not a problem with npm itself
+85 error network and is related to network connectivity.
+85 error network In most cases you are behind a proxy or have bad network settings.
+85 error network
+85 error network If you are behind a proxy, please make sure that the
+85 error network 'proxy' config is set properly.  See: 'npm help config'
+86 verbose exit [ 1, true ]

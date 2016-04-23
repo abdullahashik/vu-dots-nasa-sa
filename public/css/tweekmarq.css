@@ -1,0 +1,49 @@
+/* define the animation */
+@-webkit-keyframes marquee {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(0,-100%);
+    }
+}
+
+@-moz-keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0,-100%);
+    }
+}
+
+/* define your limiting container */
+.marquee {
+    border: solid 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* this is the tray moving around your container */
+.marquee span {
+    display: inline-block;
+    text-indent: 0;
+    animation: marquee 15s linear infinite; /* here you select the animation */
+    -webkit-animation: marquee 15s linear infinite; /* here you select the animation */
+}
+
+/* pause the animation on mouse over */
+.marquee span:hover {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(0, -100%);
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+
+    </title>
+    <link href="earth.css" rel="stylesheet"/>
+    <link href="../style.css" rel="stylesheet"/>
+</head>
+<body class="opening hide-UI view-2D zoom-large data-close controls-close">
+<div id="navbar">
+    <a id="toggle-data" href="../modified.html"><i class="icon-data"></i><- Back</a>
+    <h1>Galaxy Tour with Nasa</h1>
+    <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Menu</a>
+</div>
+<div id="controls">
+    <label class="set-view">
+        <input type="checkbox">
+    </label>
+    <label class="set-zoom">
+        <input type="checkbox">
+    </label>
+    <label>
+        <input type="radio" class="set-speed" name="scale" checked>
+        <span>Speed</span>
+    </label>
+    <label>
+        <input type="radio" class="set-size" name="scale">
+        <span>Size</span>
+    </label>
+    <label>
+        <input type="radio" class="set-distance" name="scale">
+        <span>Distance</span>
+    </label>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div id="universe">
+    <center>
+        <div id="earth"></div>
+    </center>
+</div>
+<script src="../anim.js"></script>
+<script src="../../assets/jquery-2.1.3.min.js"></script>
+</body>
+</html>
